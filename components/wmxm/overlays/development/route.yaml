@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: wmxm
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: wmxm
+    app.kubernetes.io/part-of: byoc-app-srtf
+  name: wmxmpqit
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: wmxm
+    weight: null
+status: {}

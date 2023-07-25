@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: wmxm
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-kifv-tenant/byoc-app-srtf/wmxm@sha256:e78e92d5e21195e81cec74376172b0cc491c89c43be6a2ba57221ee3b0f0d2b5
+        name: my-java-quarkus
+        resources: {}
+status: {}
